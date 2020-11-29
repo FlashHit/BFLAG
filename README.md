@@ -22,3 +22,6 @@
 <img src="https://image.prntscr.com/image/duYbpnPpTKCyrhNLj66brw.jpeg"/>
 <img src="https://image.prntscr.com/image/3FN4uThXRqSm_Y8mkU9HIg.jpeg"/>
 <img src="https://image.prntscr.com/image/ziO21E-LRM_MyjqBGDPZgg.jpeg"/>
+
+Additional to this mod you should use the <a href="https://github.com/FlashHit/AdvancedRCON">AdvancedRCON</a> mod to modify the loadout.
+<img src="https://image.prntscr.com/image/j-6JaIkQTvSiDdtrz7qCEw.jpeg"/>
