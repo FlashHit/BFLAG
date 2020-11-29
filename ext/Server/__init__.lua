@@ -68,7 +68,7 @@ Events:Subscribe('Level:Destroy', function()
 end)
 
 Events:Subscribe('Player:TeamChange', function(player, team, squad)
-	if player.ping >= 100 then
+	if player ~= nil and player.ping >= 100 then
 		player:Kick("High Ping")
 	end
 end)
