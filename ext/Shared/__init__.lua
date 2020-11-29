@@ -19,6 +19,7 @@ end)
 
 -- Deregistering, uninstalling and uninstalling in case the next level isn't MP_001
 function OnLevelDestroy()
+
 	index = 1
     flagCount = 0
     flagTransforms = {}
@@ -26,29 +27,8 @@ function OnLevelDestroy()
 	entityFactoryCreateFromBlueprint = nil
 	entityFactoryCreateFromBlueprint2 = nil
 	levelLoaded = nil
---[[	ruRedzone = nil
-	usRedzone = nil
-	
-	usSpawn1 = nil
-	usSpawn2 = nil
-	usSpawn3 = nil
-	usSpawn4 = nil
-	usSpawn5 = nil
-	usSpawn6 = nil
-	usSpawn7 = nil
-	usSpawn8 = nil
-	usSpawn10 = nil
-	ruSpawn1 = nil
-	ruSpawn2 = nil
-	ruSpawn3 = nil
-	ruSpawn4 = nil
-	ruSpawn5 = nil
-	ruSpawn6 = nil
-	ruSpawn7 = nil
-	ruSpawn8 = nil
-	ruSpawn9 = nil
-	]]
 	
 	an94part1 = nil
 	an94part2 = nil
+	
 end

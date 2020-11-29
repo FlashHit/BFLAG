@@ -21,6 +21,7 @@ function OnLevelDestroy()
 	
 	entityFactoryCreateFromBlueprint = nil
 	flagProgress = nil
+	
 end
 
 

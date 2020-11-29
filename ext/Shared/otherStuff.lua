@@ -31,15 +31,12 @@ entityFactoryCreateFromBlueprint = Hooks:Install('EntityFactory:CreateFromBluepr
 			index = 3
 		end
 		
-		--[[if blueprint.name:match("FX/Ambient") then
+		-- The store sign will disappear instead of falling down
+		if blueprint.name:match("Props/BuildingProps/ME_StoreSignSet/ME_StoreSign_02_Cluster") then
 		
 			hook:Return()	
 		end
-
-		if blueprint.name:match("Props/BuildingProps/CardboardBox_01") then
 		
-			hook:Return()	
-		end]]
 	end
 end)
 

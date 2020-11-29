@@ -39,8 +39,8 @@ end)
 levelLoaded = Events:Subscribe('Level:Loaded', function()
 	
 	flagCount = 0
+	
 end)
---Objects\FlagpoleMobile_01\FlagpoleMobile_01
 
 end
 

@@ -1,6 +1,6 @@
 
 function OtherStuff()
--- Remove cardboard boxes when destroyed, remove StoreSign when destroyed and remove ambient effects like flying trash
+-- Remove cardboard boxes when destroyed and remove ambient effects like flying trash
 entityFactoryCreateFromBlueprint = Hooks:Install('EntityFactory:CreateFromBlueprint', 1, function(hook, blueprint, transform, variation, parentRepresentative)
 	if SharedUtils:GetLevelName() == "Levels/MP_001/MP_001" and SharedUtils:GetCurrentGameMode() == "ConquestSmall0" then
 		blueprint = Blueprint(blueprint)
@@ -8,17 +8,15 @@ entityFactoryCreateFromBlueprint = Hooks:Install('EntityFactory:CreateFromBluepr
 		if blueprint.name:match("FX/Ambient") then
 		
 			hook:Return()	
+			
 		end
 
 		if blueprint.name:match("Props/BuildingProps/CardboardBox_01") then
 		
 			hook:Return()	
+			
 		end
-
-		if blueprint.name:match("Props/BuildingProps/ME_StoreSignSet/ME_StoreSign_02_Cluster") then
 		
-			hook:Return()	
-		end
 	end
 end)
 
