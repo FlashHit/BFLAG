@@ -32,9 +32,10 @@ entityFactoryCreateFromBlueprint = Hooks:Install('EntityFactory:CreateFromBluepr
 		end
 		
 		-- The store sign will disappear instead of falling down
-		if blueprint.name:match("Props/BuildingProps/ME_StoreSignSet/ME_StoreSign_02_Cluster") then
+		if blueprint.name:match("Props/BuildingProps/ME_StoreSignSet/") then
 		
 			hook:Return()	
+			
 		end
 		
 	end
