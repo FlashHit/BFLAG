@@ -8,7 +8,7 @@
  - Fixed stucking bug behind papers on B, next to the closed door
  - ~~Fixed StoreSign falling down and didn't disappear~~ (revert because of crashes)
  - Adjusted RPM of AN94 from 1200 to 800
- - Fixed Eurohipfire
+ - ~~Fixed Eurohipfire~~ (they are not ready for this one)
  - Fixed Crosshair Glitch/ Aimglitch
  - Changed flagpole position of B
  - Fixed flag progress stuttering above 100 fps
