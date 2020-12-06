@@ -6,7 +6,7 @@
  - Removed the yellow boxes
  - Fixed revive bug between US Base and B
  - Fixed stucking bug behind papers on B, next to the closed door
- - Fixed StoreSign falling down and didn't disappear
+ - ~~Fixed StoreSign falling down and didn't disappear~~ (revert because of crashes)
  - Adjusted RPM of AN94 from 1200 to 800
  - Fixed Eurohipfire
  - Fixed Crosshair Glitch/ Aimglitch
