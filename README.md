@@ -14,6 +14,7 @@
  - Fixed flag progress stuttering above 100 fps
  - Adjusted size of flag icons
  - Adjusted drawing distance of flag icons
+ - Fixed chat lag
 <img src="https://image.prntscr.com/image/DBfR_GJvQxed19RqMs4z6g.jpeg"/>
 <img src="https://image.prntscr.com/image/3yCdQ2aeS5CnmYn8H4G4vQ.jpeg"/>
 <img src="https://image.prntscr.com/image/tnw4MY8nTsGbCnJLUq1AwQ.jpeg"/>
