@@ -66,9 +66,3 @@ Events:Subscribe('Level:Destroy', function()
 	cpEntityC = nil
 	updateEvent = nil
 end)
-
-Events:Subscribe('Player:TeamChange', function(player, team, squad)
-	if player ~= nil and player.ping >= 100 then
-		player:Kick("High Ping")
-	end
-end)
