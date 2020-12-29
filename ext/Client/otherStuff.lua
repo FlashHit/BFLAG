@@ -16,6 +16,7 @@ entityFactoryCreateFromBlueprint = Hooks:Install('EntityFactory:CreateFromBluepr
 			hook:Return()	
 			
 		end
+		
 	end
 end)
 

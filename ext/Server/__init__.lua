@@ -1,4 +1,4 @@
-
+ServerUtils:SetCustomGameModeName('BFLAG') 	
 local timerStarted = false
 local elapsedTime = 0
 
@@ -9,11 +9,18 @@ local updateEvent = nil
 
 Events:Subscribe('Level:Loaded', function()
 	if SharedUtils:GetLevelName() == "Levels/MP_001/MP_001" and SharedUtils:GetCurrentGameMode() == "ConquestSmall0" then
+		if ServerUtils:GetCustomGameModeName() == nil then
+			ServerUtils:SetCustomGameModeName('BFLAG') 	
+		elseif ServerUtils:GetCustomGameModeName() ~= 'BFLAG' then
+			ServerUtils:SetCustomGameModeName('BFLAG') 	
+		end
 		countingDown = false
 		
 		CaptureFlags()
 		timerStarted = true
 		updateEvent = Events:Subscribe('Engine:Update', OnUpdate)
+	elseif ServerUtils:GetCustomGameModeName() ~= nil and ServerUtils:GetCustomGameModeName() == 'BFLAG' then
+		ServerUtils:ClearCustomGameModeName()
 	end
 end)
 

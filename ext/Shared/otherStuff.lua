@@ -240,9 +240,9 @@ bazaarObjects = ResourceManager:RegisterInstanceLoadHandler(Guid('C98941E6-B300-
 	instance:MakeWritable()
 	local registry = RegistryContainer()
 	local partition = DatabasePartition((ResourceManager:FindPartitionForInstance(instance)))
-	local wall = ResourceManager:FindInstanceByGuid(Guid('B6F8ACAB-040F-11DE-BEED-FF559017A74C'), Guid('B6F8ACAC-040F-11DE-BEED-FF559017A74C'))
-	if wall ~= nil then
-		wall = ObjectBlueprint(wall)
+	local wallShort = ResourceManager:FindInstanceByGuid(Guid('B6F8ACAB-040F-11DE-BEED-FF559017A74C'), Guid('B6F8ACAC-040F-11DE-BEED-FF559017A74C'))
+	if wallShort ~= nil then
+		wallShort = ObjectBlueprint(wallShort)
 		local wallReference = ReferenceObjectData(MathUtils:RandomGuid())
 		wallReference.blueprintTransform = LinearTransform(Vec3(1,0,0), Vec3(0,0.50770181417465,0), Vec3(0,0,1), Vec3(-59.718528747559,74.845832824707,15.243971824646))
 		wallReference.blueprint = wall
@@ -250,16 +250,15 @@ bazaarObjects = ResourceManager:RegisterInstanceLoadHandler(Guid('C98941E6-B300-
 		partition:AddInstance(wallReference)
 		registry.referenceObjectRegistry:add(wallReference)
 	end
-	
-	local wallBlock = ResourceManager:FindInstanceByGuid(Guid('FE21D27F-F646-11E0-ACB8-F0639CA1CAC6'), Guid('BCC89220-7B4D-D2AD-8A77-4A1ECF63A19C'))
-	if wallBlock ~= nil then
-		wallBlock = ObjectBlueprint(wallBlock)
-		local wallBlockReference = ReferenceObjectData(MathUtils:RandomGuid())
-		wallBlockReference.blueprintTransform = LinearTransform(Vec3(0.018646279349923,0,0), Vec3(0,0.0048726010136306,0), Vec3(0,0,0.86765390634537), Vec3(-65.359306335449,67.533172607422,37.609352111816))
-		wallBlockReference.blueprint = wallBlock
-		instance.objects:add(wallBlockReference)
-		partition:AddInstance(wallBlockReference)
-		registry.referenceObjectRegistry:add(wallBlockReference)
+	local wall = ResourceManager:FindInstanceByGuid(Guid('82DAAAFA-040D-11DE-BEED-FF559017A74C'), Guid('82DAAAFB-040D-11DE-BEED-FF559017A74C'))
+	if wall ~= nil then
+		wall = ObjectBlueprint(wall)
+		local wallReference = ReferenceObjectData(MathUtils:RandomGuid())
+		wallReference.blueprintTransform = LinearTransform(Vec3(1,0,0), Vec3(0,1,0), Vec3(0,0,1), Vec3(-65.39,72.63,44.26))
+		wallReference.blueprint = wall
+		instance.objects:add(wallReference)
+		partition:AddInstance(wallReference)
+		registry.referenceObjectRegistry:add(wallReference)
 	end
 	ResourceManager:AddRegistry(registry, ResourceCompartment.ResourceCompartment_Game)
 end)
